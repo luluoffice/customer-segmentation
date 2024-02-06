@@ -2,6 +2,8 @@
 POSTGRESQL personal project
 
 SQL project link - https://www.projectpro.io/article/sql-database-projects-for-data-analysis-to-practice/565
+
+
 Data set gotten from: https://archive.ics.uci.edu/dataset/352/online+retail
 
 Questions I plan to answer from this dataset: 
