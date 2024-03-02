@@ -300,30 +300,7 @@ CREATE VIEW monthly_revenue_2010 AS (
 
 select * from monthly_revenue_2010
 
--- VIEW CREATED 
-
-
-
-
-
-
-drop view  monthly_revenue_year
-
-
-
-select EXTRACT(YEAR FROM invoicedate)
-from invoice
-GROUP BY EXTRACT(YEAR FROM invoicedate)
-
------ REVENUE PER MONTH
-
-drop view monthly_revenue
-
-select to_char(('3', 'Month'))
-
-SELECT to_char(test3, 'Month') from (
-select to_char(invoicedate, 'Month') as test3 from invoice
-limit 10)
+----- REVENUE PER MONTH --------
 
 
 CREATE VIEW lost_revenue_per_year AS (
@@ -350,9 +327,6 @@ CREATE VIEW lost_revenue_2011_monthly AS (
     WHERE EXTRACT (YEAR FROM a.invoicedate) = 2011
     GROUP BY to_char(invoicedate, 'Month')
 );
-
-select * from lost_revenue_2011_monthly
-
 
 --Top 15 most purchased items (using the stock code and filtering by the invoice_status)
 2010
